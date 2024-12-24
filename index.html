@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: #fdfdfd;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(45deg, #4facfe, #00f2fe);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background: #f4f4f4;
+            border-bottom: 2px solid #ddd;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #4facfe;
+        }
+        main {
+            padding: 2rem 1rem;
+        }
+        section {
+            margin: 2rem auto;
+            max-width: 900px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        section h2 {
+            background: #4facfe;
+            color: white;
+            padding: 1rem;
+            margin: 0;
+        }
+        section p {
+            padding: 1rem 2rem;
+            margin: 0;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 1rem auto;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+        .hobby-item {
+            margin: 1rem 2rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: #f9f9f9;
+            border: 1px solid #eee;
+        }
+        .hobby-img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 1rem auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            section {
+                margin: 1rem auto;
+                padding: 1rem;
+            }
+            .hobby-item {
+                margin: 1rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MY PORTFOLIO</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#introduction">自己紹介</a></li>
+            <li><a href="#hobbies">趣味</a></li>
+            <li><a href="#contact">連絡先</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="introduction">
+            <h2>自己紹介</h2>
+            <img src="img/profile.jpeg" alt="プロフィール画像" class="profile-img">
+            <p>こんにちは！私は木村健人です。現在、開志専門職大学で、プログラミングなどの情報分野を学んでいます。</p>
+            <p>私は幼いころからコンピューターや技術に興味を持ち、それがきっかけで現在の学問を選びました。特にウェブ開発やゲーム開発に興味があり、これらを通じて人々の生活を豊かにすることを目標としています。</p>
+            <p>プロフィール画像の猫はおばあちゃん家で飼っている猫です。</p>
+        </section>
+        <section id="hobbies">
+            <h2>趣味</h2>
+
+            <div class="hobby-item">
+                <h3>1. ゲーム</h3>
+                <p>私は対戦ゲームが大好きで、戦略やスピード感を楽しみながらプレイしています。最近ではVALORANTやOverwatch（OW）、ストリートファイターなどに夢中になっています。これらのゲームはチームワークや個々のスキルが重要で、毎回のプレイで新しい発見があります。</p>
+                <p>フォートナイトというゲームではオンライン大会で、なんとアジアで100位にランクインした経験があります！</p>
+                <img src="img/fortnite_ranking（大）.jpeg" alt="フォートナイト大会写真" class="hobby-img">
+                <p>(画像では50位となっていますが、最終順位がアジア100位でした)</p>
+            </div>
+
+            <div class="hobby-item">
+                <h3>2. ピアノ</h3>
+                <p>今年の夏休みごろからピアノを始めました。ピアノを始めたきっかけは、妹が吹奏楽部で、夏休みに妹の高校の吹奏楽部の演奏を見に行った時に「楽器を弾けたらかっこいいな」と思ったことです。その日から妹からピアノを借りて練習し始めました。</p>
+                <p>現在練習しているのは、tuki.さんの「晩餐歌」という楽曲です。この曲はメロディが美しく、弾いていると心が癒されます。最近では両手で弾けるようになり、少しずつ上達を感じられるのが楽しいです。</p>
+                <img src="img/piano.jpeg" alt="">
+            </div>
+
+            <div class="hobby-item">
+                <h3>3. YouTubeを見ること</h3>
+                <p>リラックスしたいときや新しい情報を得たいときにはYouTubeをよく見ています。特に、ゲーム系の動画をよく見ます。プロゲーマーの視点や解説を聞いて、「どう考えているのか」を学ぶことがとても好きです。戦略やスキルについての理解が深まり、実際のゲームプレイにも役立っています。</p>
+                <p>YouTubeはほとんどゲーム系の動画を見ているのですが、唯一ゲーム以外の動画で毎日見ているYouTuberがいます。それはヒカルというYouTuberです。知っている人も多いと思いますが、この人の魅力は圧倒的なトーク力とその生き様にあります。</p>
+                <p>最近では芸人さんとコラボすることが多いですが、芸人さん相手でも圧倒的なトーク力を活かした会話の駆け引きが見どころです。また、「漫画のような出来事」が頻繁に起こる生き様も注目ポイントです。たとえば、いきなり大企業の社長になったり、数億円のホテルを購入したりと、普通では考えられないようなことを成し遂げています。そのため、「次は何をするのか」と先の読めない展開が非常に面白いです。興味がある方は動画時間が長くて見るのが大変かもしれませんがぜひ見てみてください！</p>
+                <a href="https://youtube.com/@hikaruyoutube?si=Wr3j1SwOyN3gQHrC">ヒカルさんのYouTubeチャンネル</a>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>連絡先</h2>
+            <p>お気軽にご連絡ください。</p>
+            <ul>
+                <li>メール: 20123016@kaishi-pu.ac.jp</li>
+                <li>電話: 20123016@kaishi-pu.ac.jp</li>
+                <li>YouTube: <a href="https://youtube.com/@hamumiz?si=VX6L0zzQKaxP88yG">私のYouTubeチャンネル</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 木村健人. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
